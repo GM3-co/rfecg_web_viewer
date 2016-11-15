@@ -1,0 +1,9 @@
+.*
+*.map
+ 
+*/node_modules/
+*/app/**/*.js
+*/*.js
+
+!.gitignore
+!.dockerignore

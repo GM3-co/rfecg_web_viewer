@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false
+    },
+    "exclude": [
+        "public",
+        "bower_components",
+        "node_modules",
+        "setting",
+        "typings"
+    ]
+}

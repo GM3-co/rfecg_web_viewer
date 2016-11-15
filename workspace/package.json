@@ -1,0 +1,32 @@
+{
+    "name": "rfecg_web_viewer",
+    "version": "1.0.0",
+    "description": "ECG Viewer",
+    "main": "app.js",
+    "engines": {
+        "node": "~6.4.0"
+    },
+    "scripts": {
+        "make": "tsc",
+        "start": "npm run make && node ./app.js",
+        "forever:start": "npm run make && forever -c 'node --harmony' /workspace/app.js"
+    },
+    "keywords": [
+        "ecg"
+    ],
+    "author": {
+        "name": "GM3",
+        "url": "http://gm3.jp"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "@types/core-js": "^0.9.34",
+        "@types/express": "^4.0.33",
+        "@types/node": "^6.0.45",
+        "express": "^4.14.0",
+        "forever": "^0.15.2",
+        "pug": "^2.0.0-beta6",
+        "socket.io": "^1.5.0",
+        "typescript": "^2.0.3"
+    }
+}
