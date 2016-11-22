@@ -34,9 +34,9 @@ tcpServer.on('connection', (connection) => {
   connection.on('data', (data) => {
     // socket.ioを使ってデータ送信
     io.emit('data', data.toString());
-    // console.log(data.toString());
+    console.log(data.toString());
   });
 });
 
-tcpServer.listen(50001);
-http.listen(8080);
+tcpServer.listen(8080);
+http.listen(80);
